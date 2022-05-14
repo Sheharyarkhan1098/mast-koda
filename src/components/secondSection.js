@@ -96,16 +96,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 20
   },
   cardMain:{
-    background: "orange !important",
+    background: "rgb(17,126,178) !important",
     margin: 5,
     minHeight: 380,
     "&:hover": {
-      backgroundColor: "white !important",
+      backgroundColor: "rgb(7,59,106) !important",
     },
   },
   cardContentCustom: {
     padding: "10px !important",
-    paddingBottom: "0px !important"
+    paddingBottom: "0px !important",
+    color: "white"
   },
   cardTitle: {  
     textAlign: "center",
@@ -129,7 +130,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
     textAlign: "center",
     position: "absolute",
-    color: "white",
+    color: "rgb(7,59,106)",
+    textShadow: "10px 0px 10px white",
     zIndex: 1,
     [theme.breakpoints.down("sm")]: {
       fontSize: 40,
@@ -149,21 +151,42 @@ function TopSection() {
   const [enter, setEnter] = useState("");
 
   const cardData = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
+    {
+      title: "Be part of the Thriving Artistic NFT community",
+      des: "As you join Masta Koda - by purchasing an NFT or just joining our Discord - you’re instantly part of our Club. A global community that has the drive to thrive in NFTs, ART, Gaming and the Metaverse. We’re focused on growing with each season and form real relationships as we dive into the Metaverse.",
+      imageSrc: "campfire.png"
+    },
+    {
+      title: "PawsPerks",
+      des: "Being a Masta Koda NFT holder, you automatically gain access to our exclusive Paws program which rewards you for participating in the community. Our program will continuously evolve as we grow with our community.",
+      imageSrc: "Monthly Awards.png"
+    },
+    {
+      title: "Enjoy the Metaverse with us",
+      des: "We at The Masta Koda Street Club are committed to learning and growing in the metaverse. By joining, you will have access to every metaverse we enter. For Masta Koda Holders there will be perks as we grow our Metaverse Land footprint.",
+      imageSrc: "Exclusive Games.png"
+    },
+    {
+      title: "Be part of the project",
+      des: "Masta Koda lets you be part of development and success of the project through AMAs with the development team and founders through discord and other platforms.",
+      imageSrc: "Explore the Metaverse with the Kodas.png"
+    },
+    {
+      title: "Grow your Network",
+      des: "When you join The Masta Koda Street Club you also join a Global Community of like minded individuals from different walks of life. Our community is full of individuals who love to connect and welcome newcomers in our Discord!",
+      imageSrc: "Expand your network.png"
+    },
+    {
+      title: "Get Airdrops",
+      des: "Being a Masta Koda NFT holder, you'll be eligible for coming airdrops of tokens, merchs and other perks.",
+      imageSrc: "Receive Airdrops.png"
+    },
   ]
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xl" sx={{background: "white"}}>
-        <Typography component="div" style={{background: "rgb(245,242,236)", width: "100%",  paddingBottom: 200}} >
+        <Typography component="div" style={{background: "#a2d1f6", width: "100%",  paddingBottom: 200}} >
           <Grid container className={classes.gridContainer}>
             <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} sm={4}>
@@ -210,32 +233,32 @@ function TopSection() {
               <Grid item xs={12} md={6}>
               <Typography component="div" style={{height: "100%", padding: 50, textAlign: "center", display: "flex", justifyContent: "center", alignItems: "flex-end"}}>
               <Typography variant="h4" className={`${classes.benifitText} font`}>
-                 BENIFITS OF <br /> LAZY LIONS NFT
+              Masta Koda Benefits
                 </Typography>
               </Typography>
             </Grid>
               <Grid item xs={12} md={6}>
               <Typography component="div">
-              <img src="/campfire.webp" width="100%" />
+              <img src="/campfire.png" width="100%" />
               </Typography>
             </Grid>
             </Grid>
-            <Grid container item xs={12} lg={8} className={classes.gridContainerItem2}>
+            <Grid id="roadmap" container item xs={12} lg={8} className={classes.gridContainerItem2}>
               {cardData.map((obj, id) => (
               <Grid item xs={12} sm={6} lg={4}>
-              <Card sx={{ minWidth: 275 }} className={classes.cardMain} onMouseEnter={() => setEnter(id)} onMouseLeave={() => setEnter("")}>
+              <Card sx={{ minWidth: 275, height: 350 }} className={classes.cardMain} onMouseEnter={() => setEnter(id)} onMouseLeave={() => setEnter("")}>
                 <CardContent className={classes.cardContentCustom}>
                   <Typography variant="h5" component="div" className={classes.cardTitle}>
-                    Be part of the world’s loudest NFT community
+                    {obj.title}
                   </Typography>
                   <Typography sx={{ mb: 1.5 }}  className={classes.cardTitle}>
                    <ArrowDownward />
                   </Typography>
                   <Typography sx={{ mb: 1.5 }} className={classes.cardImg} style={{display: id === enter ? "none" : "block"}}>
-                   <img src="/community.webp" width="100%" />
+                   <img src={obj.imageSrc} width="100%" />
                   </Typography>
                   <Typography variant="body2"  className={classes.cardBody} style={{display: id !== enter ? "none" : "block"}}>
-                  When you join the Lazy Lions - by purchasing an NFT or just joining our Discord - you’re instantly part of our community. A global community that empowers and supports each other on this exciting journey into Web 3.0. We’re focused on building authentic connections as we delve into the metaverse together.
+                  {obj.des}
                   </Typography>
                 </CardContent>
               </Card>
@@ -247,14 +270,15 @@ function TopSection() {
                 <Typography component="div" className={classes.videoContainer}>
                   <Typography component="span" className={classes.captionContainer}>
                     <Typography variant="h2" className={`${classes.videoCaption} font`}>
-                      We are coming <br />
-                      To Change Everything
+                    This is just the beginning… <br />
+                    Join us and become a Masta Koda!
                     </Typography>
                 </Typography>
-                <video src="/glitch.webm" width="100%" autoplay="true" loop muted="true"/>
+                <img src="lower.png" width="100%" />
+                {/* <video src="/glitch.webm" width="100%" autoplay="true" loop muted="true"/> */}
                 </Typography>
               </Grid>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Typography component="div" style={{background: "rgb(188,158,101)", marginTop: -10, padding: 20, minHeight: 350, display: "flex", justifyContent: "center", flexDirection: "column"}}>
                   <Typography component="span" style={{display: "flex", justifyContent: "center"}} >
                     <Typography variant="h2" className={"font"} style={{color: "white", textAlign: "center"}} >
@@ -267,13 +291,13 @@ function TopSection() {
                     <Button variant="contained" color="secondary"> Button 3</Button>
                 </Typography>
                 </Typography>
-              </Grid>
+              </Grid> */}
             </Grid>
-            <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
+            {/* <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
             <Typography component="div" style={{paddingTop: 80}} >
-              <img src="/roadmap.webp" width="100%" />
+              <img src="/lower.png" width="100%" />
             </Typography>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Typography>
        

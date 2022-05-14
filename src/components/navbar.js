@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Container from "@material-ui/core/Container";
-import { Instagram, Twitter } from "@material-ui/icons";
+import { Instagram, Twitter, Facebook } from "@material-ui/icons";
 import Hidden from "@material-ui/core/Hidden";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -131,35 +131,37 @@ Try Different browser or Install Metamask.`);
       <Container style={{ padding: 0, maxWidth: "100%" }}>
         <Toolbar style={{ padding: 0, maxWidth: "100%", display: "flex", justifyContent: "space-between" }}>
           <Typography component="span"  className={classes.navItemsContainer}>
+            <a href="http://www.mastakodastreetclub.com/" >
           <Typography component="span" style={{margin: 10}}>
-            <img src="/logo-dark.svg" width="40px"/>
+            <img src="/logo.png" width="40px"/>
             </Typography>
+            </a>
             <Hidden only={["xs", "sm"]}>
             <Typography component="span">
               <Button
-                  href="#"
+                  href="#purchase"
                   className={classes.navItems}
                 >
                 Purchase
               </Button>
-              <Button
+              {/* <Button
                 href="#"
                 className={classes.navItems}
               >
                 Utility
-              </Button>
+              </Button> */}
               <Button
-                href="#"
+                href="#roadmap"
                 className={classes.navItems}
               >
                 Roadmap
               </Button>
-              <Button
+              {/* <Button
                 href="#"
                 className={classes.navItems}
               >
                 Collectibles
-              </Button>
+              </Button> */}
               </Typography>
             </Hidden>
           </Typography>
@@ -168,7 +170,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://twitter.com/CatMobstaz"
+                href="https://twitter.com/MastaKodaSC"
                 target="_blank"
               >
                 {" "}
@@ -181,7 +183,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.instagram.com/catmobstaz/"
+                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
                 target="_blank"
               >
                 <Instagram
@@ -193,20 +195,20 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://twitter.com/CatMobstaz"
+                href="https://www.facebook.com/MastaKodaSC/"
                 target="_blank"
               >
                 {" "}
-                <Twitter
+                <Facebook
                   style={{ color: "#1e2761" }}
                   color="primary"
                   className={classes.icons}
                 />
               </a>
-              <a
+              {/* <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.instagram.com/catmobstaz/"
+                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
                 target="_blank"
               >
                 <Instagram
@@ -214,7 +216,7 @@ Try Different browser or Install Metamask.`);
                   color="primary"
                   className={classes.icons}
                 />
-              </a>
+              </a> */}
               {/* <Button
                 href="https://staking.catmobstaz.com"
                 color="inherit"
@@ -284,7 +286,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                // href="https://twitter.com/CatMobstaz"
+                href="https://twitter.com/MastaKodaSC"
                 target="_blank"
               >
                 <Twitter color="primary" className={classes.icons} />
@@ -294,43 +296,53 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                // href="https://www.instagram.com/catmobstaz/"
+                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
                 target="_blank"
               >
                 <Instagram color="primary" className={classes.icons} />
               </a>
             </MenuItem>
             <MenuItem onClick={handleClose} className={classes.menuItem}>
+              <a
+                rel="noreferrer"
+                style={{ textDecoration: "none" }}
+                href="https://www.facebook.com/MastaKodaSC/"
+                target="_blank"
+              >
+                <Facebook color="primary" className={classes.icons} />
+              </a>
+            </MenuItem>
+            <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
-                  href="#"
+                  href="#purchase"
                   className={classes.navItems}
                 >
                 Purchase
               </Button>
               </MenuItem>
               <MenuItem onClick={handleClose} className={classes.menuItem}>
-              <Button
+              {/* <Button
                 href="#"
                 className={classes.navItems}
               >
                 Utility
-              </Button>
+              </Button> */}
               </MenuItem>
               <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
-                href="#"
+                href="#roadmap"
                 className={classes.navItems}
               >
                 Roadmap
               </Button>
               </MenuItem>
               <MenuItem onClick={handleClose} className={classes.menuItem}>
-              <Button
-                href="#"
+              {/* <Button
+                href="#roadmap"
                 className={classes.navItems}
               >
                 Collectibles
-              </Button>
+              </Button> */}
               </MenuItem>
           </Menu>
         </Toolbar>

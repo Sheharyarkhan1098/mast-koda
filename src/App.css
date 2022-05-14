@@ -3,6 +3,11 @@
   src: url(./fonts/EdoSZ.woff2);
 }
 
+@font-face {
+  font-family: "TURNB";
+  src: url(./fonts/TURNBB__.TTF);
+}
+
 
 .App {
   text-align: center;
@@ -19,7 +24,7 @@ body{
 }
 
 .font{
-  font-family: EdoSZ !important;
+  font-family: TURNB !important;
 }
 
 

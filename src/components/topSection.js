@@ -135,7 +135,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: -100,
     borderRadius: 10,
     background: "white",
-    padding: 50
+    padding: 50,
+    background: "#a2d1f6"
   },
   gridItemContent: {
     maxWidth: "450px",
@@ -238,26 +239,26 @@ Try Different browser or Install Metamask.`);
     
       <Container maxWidth="xl" sx={{background: "white"}}>
         <Typography component="div" style={{paddingTop: 80, marginBottom: -10}} >
-          <img src="/banner.webp" width="100%" className={classes.banner} />
+          <img src="/banner.jpeg" width="100%" className={classes.banner} />
         </Typography>
-        <Typography component="div" style={{background: "rgb(188,158,101)", width: "100%",  paddingBottom: "30%"}} >
+        <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%",  paddingBottom: "30%"}} >
           <Grid container className={classes.gridContainer}>
             <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
                 <Typography component={"div"} className={classes.showOnMd} >
-                  <img src="/sample.png" width="80%" height="100%"/>
+                  <img src="/Exclusive Games.png" width="80%" height="100%"/>
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography component="div" className={classes.gridItemContent}>
                 <Typography variant="h3" className={`${classes.marginCustom} font`}>
-                 Welcome to Lazy Lions Private Island
+                Welcome to Masta Koda Exclusive Mansion
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>
-                 Join the pride of kings and queens, and explore all the possibilities of the metaverse. We’re on a mission to build the premier Web 3.0 brand together with our community, driven by our shared passion for NFTs, gaming, and the metaverse.
+                Join us Masta Kodas, Master Friends as we take a journey and discover all the possibilities of the metaverse. A community of people from around the world, brought together by a shared story of global chaos and a shared mission to stand for what’s right. We have the drive to thrive in NFTs, ART, Gaming and the Metaverse.
                 </Typography>
-                <Button variant="contained" color={"primary"} className={classes.marginCustom}>
-                 Join the Pride on Discord
+                <Button href="https://discord.com/invite/2AwzC8SHuT" variant="contained" color={"primary"} className={classes.marginCustom}>
+                Join the Tribe on Discord
                 </Button>
                 </Typography>
               </Grid>
@@ -269,27 +270,27 @@ Try Different browser or Install Metamask.`);
             </Grid>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
               <Typography component={"div"} className={classes.showOnSM} >
-                  <img src="/sample.png" width="80%" />
+                  <img src="/Monthly Awards.png" width="80%" />
                 </Typography>
             </Grid>
-              <Grid item xs={12} md={6}>
+              <Grid id="purchase" item xs={12} md={6}>
               <Typography component="div" style={{color: "rgb(245,242,236)"}} className={classes.gridItemContent}>
                 <Typography variant="h3" className={`${classes.marginCustom} font`}>
-                 Welcome to Lazy Lions Private Island
+                The Metaverse is a whole new landscape that Masta Koda will master with you as we try new possibilities and add new experiences to it.
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>
-                Web 3.0 is a wide new world with endless possibilities and new experiences, and Lazy Lions is the key to unlocking this world.
+                The Masta Koda Street Club is a collection of limited, unique, generated NFTs hosted on the Ethereum blockchain.
                 <br />
                 <br />
-                Lazy Lions is a limited collection of unique, programmatically generated NFTs hosted on the Ethereum blockchain. Each Lazy Lion is unique - just like you and programmatically generated from over 160 possible traits, including clothing, mane, expression, and more.
+                Every Masta Koda is unique and no two are alike.
                 <br />
                 <br />
-                The initial sale has sold out. To get your Lazy Lion, buy now on OpenSea.
+                Just like you are unique and have different character traits, clothes, accessories and goodies.
                 <br />
                 <br />
                 </Typography>
-                <Button variant="contained" color={"primary"} className={classes.marginCustom}>
-                 Join the Pride on Discord
+                <Button onClick={connect} variant="contained" color={"primary"} className={classes.marginCustom}>
+                Mint Now
                 </Button>
                 </Typography>
             </Grid>
