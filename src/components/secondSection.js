@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
    
   },
   gridContainerItem: {
-    marginTop: -150,
+    // marginTop: -150,
     background: "rgb(29,29,27)",
     borderRadius: 10,
     padding: 60,
@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   gridContainerItem2: {
-    marginTop: -130,
+    // marginTop: -130,
     // background: "rgb(29,29,27)",
     borderRadius: 10,
     padding: 60,
@@ -92,8 +92,11 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20
   },
   benifitText: {
-    marginBottom: 20,
-    marginTop: 20
+    // marginBottom: 20,
+    marginTop: 0,
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 40,
+    },
   },
   cardMain:{
     background: "rgb(17,126,178) !important",
@@ -134,10 +137,10 @@ const useStyles = makeStyles((theme) => ({
     textShadow: "10px 0px 10px white",
     zIndex: 1,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 40,
+      fontSize: 30,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 25,
+      fontSize: 10,
     },
   },
   captionContainer: {
@@ -188,7 +191,7 @@ function TopSection() {
       <Container maxWidth="xl" sx={{background: "white"}}>
         <Typography component="div" style={{background: "#a2d1f6", width: "100%",  paddingBottom: 200}} >
           <Grid container className={classes.gridContainer}>
-            <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
+            {/* <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} sm={4}>
                 <Typography component="div" className={classes.gridItemContent}>
                 <Typography variant="h3" className={classes.marginCustom}>
@@ -228,10 +231,10 @@ function TopSection() {
                 </Typography>
                 </Typography>
               </Grid>
-            </Grid>
+            </Grid> */}
             <Grid container item xs={12} lg={8} className={classes.gridContainerItem2}>
               <Grid item xs={12} md={6}>
-              <Typography component="div" style={{height: "100%", padding: 50, textAlign: "center", display: "flex", justifyContent: "center", alignItems: "flex-end"}}>
+              <Typography component="div" style={{height: "100%", textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center"}}>
               <Typography variant="h4" className={`${classes.benifitText} font`}>
               Masta Koda Benefits
                 </Typography>
@@ -269,7 +272,7 @@ function TopSection() {
               <Grid item xs={12}>
                 <Typography component="div" className={classes.videoContainer}>
                   <Typography component="span" className={classes.captionContainer}>
-                    <Typography variant="h2" className={`${classes.videoCaption} font`}>
+                    <Typography variant="h4" className={`${classes.videoCaption} font`}>
                     This is just the beginning… <br />
                     Join us and become a Masta Koda!
                     </Typography>

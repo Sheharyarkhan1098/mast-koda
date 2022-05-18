@@ -44,9 +44,9 @@ const useStyles = makeStyles((theme) => ({
   h3: {
     marginBottom: 10,
     fontWeight: "Bolder",
-    color: "#408ec6",
+    // color: "#408ec6",
     [theme.breakpoints.down("xs")]: {
-      fontSize: 30,
+      fontSize: 20,
     },
   },
   h4: {
@@ -136,10 +136,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     background: "white",
     padding: 50,
-    background: "#a2d1f6"
+    background: "#a2d1f6",
+    [theme.breakpoints.down("xs")]: {
+      padding: 20,
+    },
   },
   gridItemContent: {
-    maxWidth: "450px",
+    maxWidth: "800px",
     padding: 20,
     display: "flex",
     alignItems: "space-between",
@@ -151,10 +154,17 @@ const useStyles = makeStyles((theme) => ({
   },
   showOnMd: {
     display: "flex",
+    marginTop: -150,
     justifyContent: "center",
     maxHeight: 500,
     [theme.breakpoints.down("sm")]: {
       display: "none"
+    },
+    [theme.breakpoints.down("lg")]: {
+      marginTop: -50,
+    },
+    [theme.breakpoints.down("md")]: {
+      marginTop: 0,
     }
   },
   showOnSM: {
@@ -241,7 +251,7 @@ Try Different browser or Install Metamask.`);
         <Typography component="div" style={{paddingTop: 80, marginBottom: -10}} >
           <img src="/banner.jpeg" width="100%" className={classes.banner} />
         </Typography>
-        <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%",  paddingBottom: "30%"}} >
+        <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%",}} >
           <Grid container className={classes.gridContainer}>
             <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
@@ -251,7 +261,7 @@ Try Different browser or Install Metamask.`);
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography component="div" className={classes.gridItemContent}>
-                <Typography variant="h3" className={`${classes.marginCustom} font`}>
+                <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
                 Welcome to Masta Koda Exclusive Mansion
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>
@@ -273,9 +283,9 @@ Try Different browser or Install Metamask.`);
                   <img src="/Monthly Awards.png" width="80%" />
                 </Typography>
             </Grid>
-              <Grid id="purchase" item xs={12} md={6}>
+              <Grid id="purchase" item xs={12} style={{display: "flex", justifyContent: "center"}}>
               <Typography component="div" style={{color: "rgb(245,242,236)"}} className={classes.gridItemContent}>
-                <Typography variant="h3" className={`${classes.marginCustom} font`}>
+                <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
                 The Metaverse is a whole new landscape that Masta Koda will master with you as we try new possibilities and add new experiences to it.
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>

@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Container from "@material-ui/core/Container";
-import { Instagram, Twitter, Facebook } from "@material-ui/icons";
+import { Instagram, Twitter, Facebook, YouTube } from "@material-ui/icons";
 import Hidden from "@material-ui/core/Hidden";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -205,6 +205,19 @@ Try Different browser or Install Metamask.`);
                   className={classes.icons}
                 />
               </a>
+              <a
+                rel="noreferrer"
+                style={{ textDecoration: "none" }}
+                href="https://youtu.be/ouIFDxQR_Qs"
+                target="_blank"
+              >
+                {" "}
+                <YouTube
+                  style={{ color: "#1e2761" }}
+                  color="primary"
+                  className={classes.icons}
+                />
+              </a>
               {/* <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
@@ -313,6 +326,16 @@ Try Different browser or Install Metamask.`);
               </a>
             </MenuItem>
             <MenuItem onClick={handleClose} className={classes.menuItem}>
+              <a
+                rel="noreferrer"
+                style={{ textDecoration: "none" }}
+                href="https://youtu.be/ouIFDxQR_Qs"
+                target="_blank"
+              >
+                <YouTube color="primary" className={classes.icons} />
+              </a>
+            </MenuItem>
+            <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
                   href="#purchase"
                   className={classes.navItems}
@@ -320,14 +343,14 @@ Try Different browser or Install Metamask.`);
                 Purchase
               </Button>
               </MenuItem>
-              <MenuItem onClick={handleClose} className={classes.menuItem}>
-              {/* <Button
+              {/* <MenuItem onClick={handleClose} className={classes.menuItem}>
+              <Button
                 href="#"
                 className={classes.navItems}
               >
                 Utility
-              </Button> */}
-              </MenuItem>
+              </Button>
+              </MenuItem> */}
               <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
                 href="#roadmap"
@@ -336,14 +359,14 @@ Try Different browser or Install Metamask.`);
                 Roadmap
               </Button>
               </MenuItem>
-              <MenuItem onClick={handleClose} className={classes.menuItem}>
-              {/* <Button
+              {/* <MenuItem onClick={handleClose} className={classes.menuItem}>
+              <Button
                 href="#roadmap"
                 className={classes.navItems}
               >
                 Collectibles
-              </Button> */}
-              </MenuItem>
+              </Button>
+              </MenuItem> */}
           </Menu>
         </Toolbar>
       </Container>
