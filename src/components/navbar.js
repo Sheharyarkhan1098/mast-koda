@@ -11,6 +11,7 @@ import { Instagram, Twitter, Facebook, YouTube } from "@material-ui/icons";
 import Hidden from "@material-ui/core/Hidden";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import ReactAudioPlayer from 'react-audio-player';
 
 import Web3 from "web3";
 import { injected } from "../wallet/connectors";
@@ -167,6 +168,13 @@ Try Different browser or Install Metamask.`);
           </Typography>
           <Hidden only={["xs", "sm"]}>
             <Typography component="div">
+              <ReactAudioPlayer
+                src="music.mp3"
+                autoPlay={true}
+                controls={true}
+                loop={true}
+                style={{marginBottom: -10}}
+              />
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
@@ -335,6 +343,7 @@ Try Different browser or Install Metamask.`);
                 <YouTube color="primary" className={classes.icons} />
               </a>
             </MenuItem>
+           
             <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
                   href="#purchase"
@@ -359,6 +368,14 @@ Try Different browser or Install Metamask.`);
                 Roadmap
               </Button>
               </MenuItem>
+              <MenuItem onClick={handleClose} className={classes.menuItem}>
+            <ReactAudioPlayer
+                src="music.mp3"
+                autoPlay={true}
+                controls={true}
+                loop={true}
+              />
+            </MenuItem>
               {/* <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
                 href="#roadmap"
