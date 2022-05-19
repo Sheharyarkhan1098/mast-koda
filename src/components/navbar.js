@@ -371,7 +371,6 @@ Try Different browser or Install Metamask.`);
               <MenuItem onClick={handleClose} className={classes.menuItem}>
             <ReactAudioPlayer
                 src="music.mp3"
-                autoPlay={true}
                 controls={true}
                 loop={true}
               />
