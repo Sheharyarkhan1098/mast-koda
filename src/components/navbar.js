@@ -191,7 +191,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
+                href="https://www.instagram.com/mastakodasc"
                 target="_blank"
               >
                 <Instagram
@@ -216,7 +216,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://youtu.be/ouIFDxQR_Qs"
+                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
                 target="_blank"
               >
                 {" "}
@@ -229,7 +229,7 @@ Try Different browser or Install Metamask.`);
               {/* <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
+                href="https://www.instagram.com/mastakodasc"
                 target="_blank"
               >
                 <Instagram
@@ -317,7 +317,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.instagram.com/accounts/login/?next=/mastakodasc/"
+                href="https://www.instagram.com/mastakodasc"
                 target="_blank"
               >
                 <Instagram color="primary" className={classes.icons} />
@@ -337,7 +337,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://youtu.be/ouIFDxQR_Qs"
+                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
                 target="_blank"
               >
                 <YouTube color="primary" className={classes.icons} />

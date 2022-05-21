@@ -175,6 +175,13 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "none"
     }
+  },
+  iframe: {
+    width: "100%",
+    height: "100vh",
+    [theme.breakpoints.down("sm")]: {
+      height: "50vh",
+    }
   }
 }));
 
@@ -249,7 +256,8 @@ Try Different browser or Install Metamask.`);
     
       <Container maxWidth="xl" sx={{background: "white"}}>
         <Typography component="div" style={{paddingTop: 80, marginBottom: -10}} >
-          <img src="/banner.jpeg" width="100%" className={classes.banner} />
+          {/* <img src="/banner.jpeg" width="100%" className={classes.banner} /> */}
+          <iframe className={classes.iframe} src="https://www.youtube.com/embed/ouIFDxQR_Qs" title="Masta Koda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Typography>
         <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%",}} >
           <Grid container className={classes.gridContainer}>
@@ -262,10 +270,16 @@ Try Different browser or Install Metamask.`);
               <Grid item xs={12} md={6}>
                 <Typography component="div" className={classes.gridItemContent}>
                 <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
-                Welcome to Masta Koda Exclusive Mansion
+                WELCOME TO THE MASTA KODA EXCLUSIVE MANSION
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>
-                Join us Masta Kodas, Master Friends as we take a journey and discover all the possibilities of the metaverse. A community of people from around the world, brought together by a shared story of global chaos and a shared mission to stand for what’s right. We have the drive to thrive in NFTs, ART, Gaming and the Metaverse.
+                Join us Masta Kodas, Master Friends as we take a journey and discover all the possibilities of the metaverse. A community of people from around the world, brought together by a shared mission to CARE FOR OTHERS. We have the drive to thrive in NFTs, ART, Gaming and the Metaverse!
+                </Typography>
+                <Typography variant="h5" className={classes.marginCustom} style={{fontWeight: "bolder"}}>
+                MASTERING A NEW LANDSCAPE
+                </Typography>
+                <Typography variant="body1" className={classes.marginCustom}>
+                The Metaverse is a whole new landscape. Join us as we try new possibilities and experiences.
                 </Typography>
                 <Button href="https://discord.com/invite/2AwzC8SHuT" variant="contained" color={"primary"} className={classes.marginCustom}>
                 Join the Tribe on Discord
@@ -299,7 +313,7 @@ Try Different browser or Install Metamask.`);
                 <br />
                 <br />
                 </Typography>
-                <Button onClick={connect} variant="contained" color={"primary"} className={classes.marginCustom}>
+                <Button onClick={connect} disabled variant="contained" color={"primary"} className={classes.marginCustom}>
                 Mint Now
                 </Button>
                 </Typography>

@@ -114,6 +114,7 @@ const useStyles = makeStyles((theme) => ({
   cardTitle: {  
     textAlign: "center",
     margin: "10px 0",
+    textTransform: "uppercase"
 
   },
   cardImg: {
@@ -132,7 +133,7 @@ const useStyles = makeStyles((theme) => ({
   videoCaption: {
     marginTop: 50,
     textAlign: "center",
-    position: "absolute",
+    // position: "absolute",
     color: "rgb(7,59,106)",
     textShadow: "10px 0px 10px white",
     zIndex: 1,
@@ -184,12 +185,17 @@ function TopSection() {
       des: "Being a Masta Koda NFT holder, you'll be eligible for coming airdrops of tokens, merchs and other perks.",
       imageSrc: "Receive Airdrops.png"
     },
+    {
+      title: "GIVING A HAND, TO SHOW THAT WE CARE",
+      des: "The Masta Koda Street Club is dedicated to helping others. We have partnered with the GROWING OF FUTURE FOUNDATION in Thailand, a non-profit organization aimed at helping children who were abandoned by their parents due to drugs and abuse. Every Masta Koda will help these children in need and will lead them to a brighter future",
+      imageSrc: "campfire.png"
+    },
   ]
   return (
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="xl" sx={{background: "white"}}>
-        <Typography component="div" style={{background: "#a2d1f6", width: "100%",  paddingBottom: 200}} >
+        <Typography component="div" style={{background: "#a2d1f6", width: "100%",}} >
           <Grid container className={classes.gridContainer}>
             {/* <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} sm={4}>
@@ -277,8 +283,9 @@ function TopSection() {
                     Join us and become a Masta Koda!
                     </Typography>
                 </Typography>
-                <img src="lower.png" width="100%" />
-                {/* <video src="/glitch.webm" width="100%" autoplay="true" loop muted="true"/> */}
+                {/* <img src="lower.png" width="100%" /> */}
+                {/* <video src="https://www.youtube.com/embed/ouIFDxQR_Qs" width="100%" autoplay="true" loop muted="true"/> */}
+                
                 </Typography>
               </Grid>
               {/* <Grid item xs={12}>
@@ -296,11 +303,11 @@ function TopSection() {
                 </Typography>
               </Grid> */}
             </Grid>
-            {/* <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
+            <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
             <Typography component="div" style={{paddingTop: 80}} >
               <img src="/lower.png" width="100%" />
             </Typography>
-            </Grid> */}
+            </Grid>
           </Grid>
         </Typography>
        
