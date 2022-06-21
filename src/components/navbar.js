@@ -140,7 +140,7 @@ Try Different browser or Install Metamask.`);
             <Hidden only={["xs", "sm"]}>
             <Typography component="span">
               <Button
-                  href="#purchase"
+                  href="http://www.mastakodastreetclub.com/"
                   className={classes.navItems}
                 >
                 Purchase
@@ -152,7 +152,7 @@ Try Different browser or Install Metamask.`);
                 Utility
               </Button> */}
               <Button
-                href="#roadmap"
+                href="http://www.mastakodastreetclub.com/"
                 className={classes.navItems}
               >
                 Roadmap
@@ -216,7 +216,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
+                href="https://www.youtube.com/MastaKodaSC"
                 target="_blank"
               >
                 {" "}
@@ -337,7 +337,8 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
+                // href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
+                href="https://www.youtube.com/MastaKodaSC"
                 target="_blank"
               >
                 <YouTube color="primary" className={classes.icons} />
@@ -346,7 +347,7 @@ Try Different browser or Install Metamask.`);
            
             <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
-                  href="#purchase"
+                  href="http://www.mastakodastreetclub.com/"
                   className={classes.navItems}
                 >
                 Purchase
@@ -362,7 +363,7 @@ Try Different browser or Install Metamask.`);
               </MenuItem> */}
               <MenuItem onClick={handleClose} className={classes.menuItem}>
               <Button
-                href="#roadmap"
+                href="http://www.mastakodastreetclub.com/"
                 className={classes.navItems}
               >
                 Roadmap

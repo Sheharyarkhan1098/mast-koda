@@ -132,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
    
   },
   gridContainerItem: {
-    marginTop: -100,
+    marginTop: 10,
     borderRadius: 10,
     background: "white",
     padding: 50,
@@ -154,18 +154,18 @@ const useStyles = makeStyles((theme) => ({
   },
   showOnMd: {
     display: "flex",
-    marginTop: -150,
+    // marginTop: -150,
     justifyContent: "center",
     maxHeight: 500,
     [theme.breakpoints.down("sm")]: {
       display: "none"
     },
-    [theme.breakpoints.down("lg")]: {
-      marginTop: -50,
-    },
-    [theme.breakpoints.down("md")]: {
-      marginTop: 0,
-    }
+    // [theme.breakpoints.down("lg")]: {
+    //   marginTop: -50,
+    // },
+    // [theme.breakpoints.down("md")]: {
+    //   marginTop: 0,
+    // }
   },
   showOnSM: {
     display: "flex",
@@ -264,12 +264,12 @@ Try Different browser or Install Metamask.`);
             <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
                 <Typography component={"div"} className={classes.showOnMd} >
-                  <img src="/Exclusive Games.png" width="80%" height="100%"/>
+                  <img src="/lower.png" width="80%" height="100%"/>
                 </Typography>
               </Grid>
               <Grid item xs={12} md={6}>
                 <Typography component="div" className={classes.gridItemContent}>
-                <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
+                <Typography variant="h3" style={{textAlign: "center"}} className={`${classes.h3} marginCustom font`}>
                 WELCOME TO THE MASTA KODA EXCLUSIVE MANSION
                 </Typography>
                 <Typography variant="body1" className={classes.marginCustom}>
@@ -294,14 +294,14 @@ Try Different browser or Install Metamask.`);
             </Grid>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
               <Typography component={"div"} className={classes.showOnSM} >
-                  <img src="/Monthly Awards.png" width="80%" />
+                  <img src="/lower.png" width="80%" />
                 </Typography>
             </Grid>
               <Grid id="purchase" item xs={12} style={{display: "flex", justifyContent: "center"}}>
               <Typography component="div" style={{color: "rgb(245,242,236)"}} className={classes.gridItemContent}>
-                <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
+                {/* <Typography variant="h3" className={`${classes.h3} marginCustom font`}>
                 The Metaverse is a whole new landscape that Masta Koda will master with you as we try new possibilities and add new experiences to it.
-                </Typography>
+                </Typography> */}
                 <Typography variant="body1" className={classes.marginCustom}>
                 The Masta Koda Street Club is a collection of limited, unique, generated NFTs hosted on the Ethereum blockchain.
                 <br />
@@ -313,7 +313,7 @@ Try Different browser or Install Metamask.`);
                 <br />
                 <br />
                 </Typography>
-                <Button onClick={connect} disabled variant="contained" color={"primary"} className={classes.marginCustom}>
+                <Button onClick={connect} variant="contained" color={"primary"} className={classes.marginCustom}>
                 Mint Now
                 </Button>
                 </Typography>

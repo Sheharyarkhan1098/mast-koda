@@ -66,6 +66,8 @@ const useStyles = makeStyles((theme) => ({
   gridContainerItem2: {
     // marginTop: -130,
     // background: "rgb(29,29,27)",
+    display: "flex",
+    justifyContent: "center",
     borderRadius: 10,
     padding: 60,
     marginBottom: 50,
@@ -252,9 +254,9 @@ function TopSection() {
               </Typography>
             </Grid>
             </Grid>
-            <Grid id="roadmap" container item xs={12} lg={8} className={classes.gridContainerItem2}>
+            <Grid id="roadmap" container item xs={12} md={10} lg={8} className={classes.gridContainerItem2}>
               {cardData.map((obj, id) => (
-              <Grid item xs={12} sm={6} lg={4}>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={4}>
               <Card sx={{ minWidth: 275, height: 350 }} className={classes.cardMain} onMouseEnter={() => setEnter(id)} onMouseLeave={() => setEnter("")}>
                 <CardContent className={classes.cardContentCustom}>
                   <Typography variant="h5" component="div" className={classes.cardTitle}>
@@ -307,8 +309,16 @@ function TopSection() {
             <Typography component="div" style={{paddingTop: 80}} >
               <img src="/lower.png" width="100%" />
             </Typography>
+            
             </Grid>
           </Grid>
+            <Typography component="div" style={{background: "rgb(17 126 178)",display: "flex", justifyContent: "center", }}>
+                  <Typography component="span" style={{display: "flex", justifyContent: "center"}} >
+                    <Typography variant="body1" style={{color: "white", textAlign: "center"}} >
+                    © Masta Koda Street Club 2022
+                    </Typography>
+                </Typography>
+            </Typography>
         </Typography>
        
       </Container>
