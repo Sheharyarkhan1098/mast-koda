@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   gridItemContent: {
-    maxWidth: "800px",
+    // maxWidth: "800px",
     padding: 20,
     display: "flex",
     alignItems: "space-between",
@@ -259,16 +259,16 @@ Try Different browser or Install Metamask.`);
           {/* <img src="/banner.jpeg" width="100%" className={classes.banner} /> */}
           <iframe className={classes.iframe} src="https://www.youtube.com/embed/ouIFDxQR_Qs" title="Masta Koda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Typography>
-        <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%",}} >
+        <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%"}} >
           <Grid container className={classes.gridContainer}>
-            <Grid container item xs={10} lg={8} className={classes.gridContainerItem}>
-              <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
+            <Grid container item xs={10} lg={8} className={classes.gridContainerItem} >
+              <Grid item xs={12} md={12} style={{disply: "flex", justifyContent: "center"}}>
                 <Typography component={"div"} className={classes.showOnMd} >
-                  <img src="/lower.png" width="80%" height="100%"/>
+                  <img src="/mansion.jpg" width="100%"/>
                 </Typography>
               </Grid>
-              <Grid item xs={12} md={6}>
-                <Typography component="div" className={classes.gridItemContent}>
+              <Grid item xs={12} md={12}>
+                <Typography component="div" className={classes.gridItemContent} style={{disply: "flex", justifyContent: "center"}}>
                 <Typography variant="h3" style={{textAlign: "center"}} className={`${classes.h3} marginCustom font`}>
                 WELCOME TO THE MASTA KODA EXCLUSIVE MANSION
                 </Typography>
@@ -294,7 +294,7 @@ Try Different browser or Install Metamask.`);
             </Grid>
               <Grid item xs={12} md={6} style={{disply: "flex", justifyContent: "center"}}>
               <Typography component={"div"} className={classes.showOnSM} >
-                  <img src="/lower.png" width="80%" />
+                  <img src="/mansion.jpg" width="80%" />
                 </Typography>
             </Grid>
               <Grid id="purchase" item xs={12} style={{display: "flex", justifyContent: "center"}}>

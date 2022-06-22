@@ -134,7 +134,7 @@ Try Different browser or Install Metamask.`);
           <Typography component="span"  className={classes.navItemsContainer}>
             <a href="http://www.mastakodastreetclub.com/" >
           <Typography component="span" style={{margin: 10}}>
-            <img src="/logo.png" width="60px"/>
+            <img src="/newLogo.png" width="60px"/>
             </Typography>
             </a>
             <Hidden only={["xs", "sm"]}>

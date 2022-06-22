@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "EdoSZ";
-  src: url(./fonts/EdoSZ.woff2);
+  font-family: "Mon-Reg";
+  src: url(./fonts/Montserrat-Regular.otf);
 }
 
 @font-face {
-  font-family: "TURNB";
-  src: url(./fonts/TURNBB__.TTF);
+  font-family: "Mon-Bold";
+  src: url(./fonts/Montserrat-Bold.otf);
 }
 
 
@@ -20,11 +20,11 @@
 
 body{
   background-color: "white" !important;
-  font-family: EdoSZ !important;
+  font-family: Mon-Reg !important;
 }
 
 .font{
-  font-family: TURNB !important;
+  font-family: Mon-Bold !important;
 }
 
 
