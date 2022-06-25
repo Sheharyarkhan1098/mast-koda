@@ -9,6 +9,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import ArrowDownward from '@material-ui/icons/ArrowDownward';
+import Team from "./team"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -120,8 +121,20 @@ const useStyles = makeStyles((theme) => ({
 
   },
   cardImg: {
+    width: "100%",
+    width: 300,
+    [theme.breakpoints.down("md")]: {
+      marginTop: -20,
+      width: 300
+    },
 
   },
+  cardImgContainer: {
+    marginTop: 0,
+    display: "flex",
+    justifyContent: "center",
+  },
+
   cardBody: {
     display: "none",
     paddingBottom: 20
@@ -143,7 +156,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 30,
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: 10,
+      fontSize: 15,
     },
   },
   captionContainer: {
@@ -257,7 +270,7 @@ function TopSection() {
             <Grid id="roadmap" container item xs={12} md={10} lg={8} className={classes.gridContainerItem2}>
               {cardData.map((obj, id) => (
               <Grid item xs={12} sm={12} md={6} lg={6} xl={4}>
-              <Card sx={{ minWidth: 275, height: 350 }} className={classes.cardMain} onMouseEnter={() => setEnter(id)} onMouseLeave={() => setEnter("")}>
+              <Card sx={{ minWidth: 275, height: 450 }} className={classes.cardMain} onMouseEnter={() => setEnter(id)} onMouseLeave={() => setEnter("")}>
                 <CardContent className={classes.cardContentCustom}>
                   <Typography variant="h5" component="div" className={classes.cardTitle}>
                     {obj.title}
@@ -265,8 +278,8 @@ function TopSection() {
                   <Typography sx={{ mb: 1.5 }}  className={classes.cardTitle}>
                    <ArrowDownward />
                   </Typography>
-                  <Typography sx={{ mb: 1.5 }} className={classes.cardImg} style={{display: id === enter ? "none" : "block"}}>
-                   <img src={obj.imageSrc} width="100%" />
+                  <Typography sx={{ mb: 1.5 }} className={classes.cardImgContainer} style={{display: id === enter ? "none" : "flex"}}>
+                   <img src={obj.imageSrc}  className={classes.cardImg} />
                   </Typography>
                   <Typography variant="body2"  className={classes.cardBody} style={{display: id !== enter ? "none" : "block"}}>
                   {obj.des}
@@ -276,6 +289,7 @@ function TopSection() {
               </Grid>
               ))}
             </Grid>
+            <Team />
           <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
               <Grid item xs={12}>
                 <Typography component="div" className={classes.videoContainer}>

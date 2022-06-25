@@ -7,21 +7,24 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+import { Twitter } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   designation: {
     textAlign: "center",
-    color: "#aaaaaa",
+    // color: "#aaaaaa",
+    color: "#a2d1f6",
   },
   name: {
     textAlign: "center",
     fontWeight: "bolder",
-    color: "#025e89",
+    // color: "#025e89",
+    color: "white",
   },
   title: {
     fontWeight: "Bolder",
     textAlign: "center",
-    color: "#025e89",
+    // color: "#025e89",
     [theme.breakpoints.down("xs")]: {
       fontSize: 35,
     },
@@ -37,17 +40,17 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     margin: 20,
   },
+  icons: {
+    fontSize: 20,
+    margin: "0 2px",
+    color: "#1e2761",
+  },
 }));
 
 const faqData = [
-  { name: "Cool Boy Greg", designation: "Founder", img: "/team-1.png" },
-  { name: "Cool Boy David", designation: "Marketing Head", img: "/team-2.png" },
-  { name: "Cool Boy Eric", designation: " Art Director", img: "/team-3.png" },
-  {
-    name: "Cool Boy Jacob",
-    designation: "Blockchain Expert",
-    img: "/team-4.png",
-  },
+  { name: "MatrixKing", designation: "@MatrixKingYT", img: "/matrix.png" },
+  { name: "Axel Green", designation: "@AxelGreen72", img: "/axel.jpg" },
+  { name: "ACIII", designation: "@ACIIIart", img: "/acii.png" },
 ];
 
 function TeamCard() {
@@ -64,7 +67,7 @@ function TeamCard() {
                 image={obj.img}
                 title={obj.name}
               />
-              <CardContent>
+              <CardContent style={{background: "rgb(17 126 178)"}}> 
                 <Typography
                   variant="h6"
                   component="h6"
@@ -72,12 +75,23 @@ function TeamCard() {
                 >
                   {obj.name}
                 </Typography>
+                
+                <Typography
+                  component="div"
+                  style={{display: "flex", justifyContent: "center", alignItems: "center"}}
+                  >
+                  <Twitter
+                    style={{ color: "#1e2761" }}
+                    color="primary"
+                    className={classes.icons}
+                  />
                 <Typography
                   variant="body2"
                   component="p"
                   className={classes.designation}
                 >
-                  {obj.designation}
+                  {obj.designation} 
+                </Typography>
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -98,7 +112,7 @@ function Team() {
         container
         style={{
           justifyContent: "center",
-          backgroundColor: "#FFFF",
+          backgroundColor: "#a2d1f6",
           padding: 10,
         }}
       >
@@ -106,7 +120,7 @@ function Team() {
           <Typography component="div" style={{ padding: 30, marginBottom: 30 }}>
             {" "}
             {/* borderBottom: "2px solid #025e89"*/}
-            <Typography variant="h3" className={classes.title}>
+            <Typography variant="h3" className={`font ${classes.title}`}>
               Our Hard Working Team
             </Typography>
           </Typography>

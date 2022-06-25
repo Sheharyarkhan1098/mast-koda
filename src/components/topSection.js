@@ -217,10 +217,10 @@ Try Different browser or Install Metamask.`);
 
       let id = await web3.eth.net.getId();
 
-      if (id !== parseInt(chainId)) {
-        alert("Please change your network to rinkbey");
-        return false;
-      }
+      // if (id !== parseInt(chainId)) {
+      //   alert("Please change your network to rinkbey");   //////////// network check
+      //   return false;
+      // }
 
       const accounts = await web3.eth.getAccounts();
         await Contract.methods.mint(accounts[0], count).send({
