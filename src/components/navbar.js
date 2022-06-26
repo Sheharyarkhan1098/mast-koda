@@ -216,7 +216,7 @@ Try Different browser or Install Metamask.`);
               <a
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
-                href="https://www.youtube.com/MastaKodaSC"
+                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
                 target="_blank"
               >
                 {" "}
@@ -338,7 +338,7 @@ Try Different browser or Install Metamask.`);
                 rel="noreferrer"
                 style={{ textDecoration: "none" }}
                 // href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
-                href="https://www.youtube.com/MastaKodaSC"
+                href="https://www.youtube.com/channel/UCd0xGj88rJiHxDtLY20Dd8g"
                 target="_blank"
               >
                 <YouTube color="primary" className={classes.icons} />
