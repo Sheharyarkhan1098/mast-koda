@@ -48,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const faqData = [
-  { name: "MatrixKing", designation: "@MatrixKingYT", img: "/matrix.png" },
-  { name: "Axel Green", designation: "@AxelGreen72", img: "/axel.jpg" },
-  { name: "ACIII", designation: "@ACIIIart", img: "/acii.png" },
+  { name: "MatrixKing", designation: "@MatrixKingYT", img: "/matrix.png", link:"https://twitter.com/MatrixKingYT" },
+  { name: "Axel Green", designation: "@AxelGreen72", img: "/axel.jpg", link:"https://twitter.com/AxelGreen72" },
+  { name: "ACIII", designation: "@ACIIIart", img: "/acii.png", link:"https://twitter.com/AciiIart" },
 ];
 
 function TeamCard() {
@@ -90,7 +90,7 @@ function TeamCard() {
                   component="p"
                   className={classes.designation}
                 >
-                  {obj.designation} 
+                  <a href={obj.link} target="_blank" style={{textDecoration: "none", color: "inherit"}}>{obj.designation}</a> 
                 </Typography>
                 </Typography>
               </CardContent>
