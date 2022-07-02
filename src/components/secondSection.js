@@ -289,8 +289,15 @@ function TopSection() {
               </Grid>
               ))}
             </Grid>
+            <Grid container item xs={12} lg={12} className={classes.gridContainerItem3} >
+            <Typography component="div" style={{paddingTop: 0}} >
+              <img src="/mast-koda-banner.jpg" width="100%" />
+            </Typography>
+            
+            </Grid>
             <Team />
           <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
+            
               <Grid item xs={12}>
                 <Typography component="div" className={classes.videoContainer}>
                   <Typography component="span" className={classes.captionContainer}>
