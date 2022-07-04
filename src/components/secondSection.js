@@ -25,6 +25,13 @@ const useStyles = makeStyles((theme) => ({
       color: "#025e89",
     },
   },
+  iframe: {
+    width: "100%",
+    height: "50vh",
+    [theme.breakpoints.down("sm")]: {
+      height: "50vh",
+    }
+  },
   img: {
     maxHeight: "90%",
   },
@@ -326,13 +333,15 @@ function TopSection() {
                 </Typography>
               </Grid> */}
             </Grid>
-            <Grid container item xs={12} lg={9} className={classes.gridContainerItem3} >
+            {/* <Grid container item xs={12} lg={12} className={classes.gridContainerItem3} >
             <Typography component="div" style={{paddingTop: 80}} >
               <img src="/lower.png" width="100%" />
+
             </Typography>
             
-            </Grid>
+            </Grid> */}
           </Grid>
+          <iframe className={classes.iframe} src="https://www.youtube.com/embed/ouIFDxQR_Qs" title="Masta Koda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <Typography component="div" style={{background: "rgb(17 126 178)",display: "flex", justifyContent: "center", }}>
                   <Typography component="span" style={{display: "flex", justifyContent: "center"}} >
                     <Typography variant="body1" style={{color: "white", textAlign: "center"}} >

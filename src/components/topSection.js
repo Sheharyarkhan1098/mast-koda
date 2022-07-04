@@ -256,8 +256,8 @@ Try Different browser or Install Metamask.`);
     
       <Container maxWidth="xl" sx={{background: "white"}}>
         <Typography component="div" style={{paddingTop: 80, marginBottom: -10}} >
-          {/* <img src="/banner.jpeg" width="100%" className={classes.banner} /> */}
-          <iframe className={classes.iframe} src="https://www.youtube.com/embed/ouIFDxQR_Qs" title="Masta Koda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img src="/lower.png" width="100%" className={classes.banner} />
+          {/* <iframe className={classes.iframe} src="https://www.youtube.com/embed/ouIFDxQR_Qs" title="Masta Koda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </Typography>
         <Typography component="div" style={{background: "rgb(17 126 178)", width: "100%"}} >
           <Grid container className={classes.gridContainer}>
